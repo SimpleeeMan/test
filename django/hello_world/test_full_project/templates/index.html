@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<form method="post" action="\">
+{% csrf_token %}
+    {{ form }}
+    <button name="enter">enter</button>
+</form>
+<br>
+<img src= "{% static 'test4.png'%}" alt="image">
+</body>
+</html>
